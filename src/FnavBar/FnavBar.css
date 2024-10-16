@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navSec {
+  width: 100%;
+}
+
+.img1 {
+  max-width: 100px;
+  min-height: 50px;
+}
+
+.txt {
+  font-size: 20px;
+  transition: color 0.5s ease, transform 0.5s;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.txt:hover {
+  color: #f57664 !important;
+  transform: scale(1.1);
+}

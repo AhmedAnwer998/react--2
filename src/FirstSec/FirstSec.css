@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+
+
+
+.First-Sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  min-height: 80dvh;
+  overflow: hidden;
+  
+}
+
+.First-Sec-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  min-height: 80dvh;
+}
+
+.First-Col-1 {
+  max-width: 60dvw;
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateX(-100%);
+}
+
+.First-Col-2 {
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateX(100%);
+  max-width: 100%;
+  position: relative;
+}
+
+/* animation */
+
+.fade-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ________________________________ */
+
+.img9 {
+  max-width: 100%;
+  min-height: 80dvh;
+}
+
+.img2 {
+  max-width: 70%;
+  min-height: 40dvh;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img11 {
+  max-width: 80px;
+  background-color: rgba(97, 38, 31, 0.3);
+  padding: 18px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.img7 {
+  max-width: 80px;
+
+  background-color: rgba(97, 38, 31, 0.4);
+  padding: 18px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 61%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.img10 {
+  max-width: 80px;
+
+  background-color: rgba(97, 38, 31, 0.4);
+  padding: 18px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 68%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.First-Col-1 > p:first-child {
+  font-size: clamp(0.3em, 0.3043em + 3.4783vw, 1em);
+  color: #f57664;
+}
+.First-Col-1 > p > span {
+  color: white;
+}
+.First-Col-1 > p:nth-child(3) {
+  font-size: clamp(0.5em, 0.3043em + 3.4783vw, 1.6em);
+}
+
+.First-Col-1 > h1 {
+  font-size: clamp(1em, 0.3043em + 3.4783vw, 2.5em);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.First-Col-1 > button {
+  background-color: #f57664;
+  width: 7dvw;
+  height: auto;
+  padding: 2px 0;
+  font-size: clamp(0.2em, 0.3043em + 3.4783vw, 1.1em);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.First-Col-1 > button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .img2 {
+    min-height: 15dvh;
+  }
+  .img11,
+  .img7,
+  .img10 {
+    max-width: 70px;
+  }
+}
+
+
+@media (max-width: 568px) {
+    .img11,
+  .img7,
+  .img10 {
+    max-width: 60px;
+  }
+}
