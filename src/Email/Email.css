@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.email {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.email-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-col-1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateX(-100%);
+}
+
+.email-col-1 p{
+    font-size: 24px;
+}
+
+.email-col-1 p span{
+    color: rgb(168, 57, 32);
+    margin-right: 5px;
+}
+
+.email-col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateX(100%);
+}
+
+.fade-in-right,
+.fade-in-left{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.email-col-2 form {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-col-2 form button {
+  width: 20vw;
+  border-radius: 50px;
+  padding: 10px 5px;
+  background-color: rgb(89, 46, 46);
+  outline: none;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.email-col-2 form button:active {
+  transform: scale(0.95);
+}
+
+.email-col-2 * {
+  margin: 10px;
+}
+.email-col-2 form div input {
+  width: 18vw;
+  background-color: #070707;
+  border: 2px solid rgb(89, 46, 46);
+  padding: 10px 15px;
+  border-radius: 50px;
+  outline: none;
+}
+
+.email-col-2 form textarea {
+  width: 37vw;
+  background-color: #070707;
+  border: 2px solid rgb(89, 46, 46);
+  padding: 10px 15px;
+  border-radius: 50px;
+  outline: none;
+  resize: none;
+}
+
+@media (max-width:991px) {
+    .email{
+        margin-top: 10px;
+    }
+    .email-col-2 form{
+        justify-content: center;
+    }
+    .email-col-1{
+  align-items: center;
+    }
+    .email-col-2 form textarea{
+        width: 84vw;
+    }
+    .email-col-2 form div input{
+        width: 40vw;
+    }
+    .email-col-2 form button{
+          width: 40vw;
+
+    }
+}

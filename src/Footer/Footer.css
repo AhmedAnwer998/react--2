@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-row {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col-1 {
+  height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateX(-100%);
+}
+
+.footer-col-1 img {
+  width: 6vw;
+  transition: transform 2s ease;
+}
+
+.footer-col-1 img:hover {
+  transform: scale(1.2);
+}
+
+.footer-col-2 {
+    max-width: 30vw;
+  min-height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 2s ease-out, transform 2s ease-out;
+  transform: translateY(100%);
+}
+
+.fade-up{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-col-2 * {
+  margin: 10px 0;
+}
+
+.hash {
+  font-size: 17px;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.5s ease, transform 0.5s;
+  color: white;
+}
+
+.hash:hover {
+  color: #f57664 !important;
+  transform: scale(1.1) !important;
+}
+
+
+.footer-col-3 {
+  height: 20vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateX(100%);
+}
+
+.fade-in-left,
+.fade-in-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.footer-col-3 * {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: color 0.5s ease, transform 0.5s;
+}
+
+.footer-col-3 *:hover {
+  color: #f57664 !important;
+  transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+  .footer-col-1 img {
+    width: 15vw;
+  }
+  .footer-col-3,
+  .footer-col-1 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-col-1 img {
+    width: 18vw;
+  }
+}
+
+@media (max-width: 567px) {
+  .footer-col-1 img {
+    width: 19vw;
+  }
+
+  .footer-col-2 {
+    justify-content: center;
+    max-width: 100%;
+  }
+}

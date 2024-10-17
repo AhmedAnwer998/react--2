@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import SecondSec from "../SecondSec/SecondSec";
 import ThirdSec from "../ThirdSec/ThirdSec";
 import FourthSec from "../FourthSec/FourthSec";
+import FifthSec from "../FIfthSec/FifthSec";
+import Email from "../Email/Email";
+import Footer from "../Footer/Footer";
 
 const FirstSec = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,6 +53,9 @@ const FirstSec = () => {
       <SecondSec />
       <ThirdSec />
       <FourthSec />
+      <FifthSec />
+      <Email />
+      <Footer />
     </>
   );
 };
